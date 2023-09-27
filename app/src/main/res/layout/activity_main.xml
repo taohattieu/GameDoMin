@@ -93,7 +93,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:backgroundTint="#000000"
-            android:text="Dung"
+            android:text="pause"
             android:textColor="#ffffff">
 
         </Button>
