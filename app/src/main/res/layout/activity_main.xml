@@ -93,7 +93,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:backgroundTint="#000000"
-            android:text="Dung"
+            android:text="pause"
             android:textColor="#ffffff">
 
         </Button>
@@ -108,7 +108,7 @@
             android:id="@+id/btnPlay"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Choi"
+            android:text="Play"
             android:layout_weight="1"
             android:textColor="#ffffff"
             android:backgroundTint="#000000">
