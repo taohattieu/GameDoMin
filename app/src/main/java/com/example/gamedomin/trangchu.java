@@ -13,11 +13,11 @@ public class trangchu extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.trangchu);
 
-
+        Button button = findViewById(R.id.btn1);
         // Gắn sự kiện lắng nghe cho Button
-        trangchu.setOnClickListener(new View.OnClickListener() {
+        button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 // Tạo Intent để chuyển đến trang layout activity_main.xml
@@ -27,8 +27,5 @@ public class trangchu extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-    }
-
-    private static void setOnClickListener(View.OnClickListener onClickListener) {
     }
 }

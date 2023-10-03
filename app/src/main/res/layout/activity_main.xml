@@ -69,10 +69,10 @@
         android:orientation="horizontal"
         android:background="#BC000000">
         <Button
-            android:id="@+id/btnDanhDau"
+            android:id="@+id/btnback"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Danh dau"
+            android:text="Back"
             android:layout_weight="1"
             android:textColor="#ffffff"
             android:backgroundTint="#000000">

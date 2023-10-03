@@ -12,12 +12,12 @@
         android:theme="@style/Theme.GameDoMin"
         tools:targetApi="31">
         <activity
-            android:name=".trangchu"
+            android:name=".MainActivity"
             android:exported="false"
-            android:parentActivityName=".MainActivity"
+            android:parentActivityName=".trangchu"
             />
         <activity
-            android:name=".MainActivity"
+            android:name=".trangchu"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
