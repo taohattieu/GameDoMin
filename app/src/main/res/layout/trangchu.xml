@@ -21,7 +21,7 @@
         android:src="@drawable/ic_android_black_24dp"/>
 
     <Button
-        android:id="@+id/bt1"
+        android:id="@+id/btn1"
         android:layout_width="300dp"
         android:layout_height="60dp"
         android:backgroundTint="@color/white"
@@ -36,7 +36,7 @@
         android:textColor="@color/black"/>
 
     <Button
-        android:id="@+id/bt2"
+        android:id="@+id/btn2"
         android:layout_width="300dp"
         android:layout_height="60dp"
         android:backgroundTint="@color/white"
@@ -44,14 +44,14 @@
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/bt1"
+        app:layout_constraintTop_toBottomOf="@id/btn1"
         app:layout_constraintVertical_bias="0.239"
         android:text="Hướng dẫn"
         android:textSize="30dp"
         android:textColor="@color/black"/>
 
     <Button
-        android:id="@+id/bt3"
+        android:id="@+id/btn3"
         android:layout_width="300dp"
         android:layout_height="60dp"
         android:backgroundTint="@color/white"
@@ -59,7 +59,7 @@
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/bt2"
+        app:layout_constraintTop_toBottomOf="@id/btn2"
         app:layout_constraintVertical_bias="0.401"
         android:text="Thoát"
         android:textSize="30dp"
