@@ -3,6 +3,7 @@ import  android.content.Context;
 import android.view.View;
 
 import com.example.gamedomin.util.Generator;
+import com.example.gamedomin.util.Grid.Cell;
 import com.example.gamedomin.util.PrintGrid;
 
 public class GameEngine {

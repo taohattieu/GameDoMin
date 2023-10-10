@@ -9,11 +9,18 @@ import android.widget.GridView;
 
 import com.example.gamedomin.GameEngine;
 
-public class Gird extends GridView {
-    public Grid(Context context, AttributeSet attra){
-    super(context, attra);
+public class Grid extends GridView {
+    public Grid(Context context) {
+        super(context);
+        setAdapter(new GridAdapter());
     }
-    private class GridAdapter extends BaseAdapter{
+
+    public Grid(Context context, AttributeSet attrs) {
+        super(context, attrs);
+        setAdapter(new GridAdapter());
+    }
+
+    private class GridAdapter extends BaseAdapter {
 
         @Override
         public int getCount() {
