@@ -17,7 +17,7 @@ public class Grid extends GridView {
 
     public Grid(Context context, AttributeSet attrs) {
         super(context, attrs);
-
+        GameEngine.getInstance();
         setNumColumns(GameEngine.WIDTH);
         setAdapter(new GridAdapter());
 
@@ -36,18 +36,18 @@ public class Grid extends GridView {
         }
 
         @Override
-        public Object getItem(int i) {
+        public Object getItem(int position) {
             return null;
         }
 
         @Override
-        public long getItemId(int i) {
+        public long getItemId(int position) {
             return 0;
         }
 
         @Override
-        public View getView(int i, View view, ViewGroup viewGroup) {
-            return GameEngine.getInstance().getCellAt(i);
+        public View getView(int position, View view, ViewGroup viewGroup) {
+            return GameEngine.getInstance().getCellAt(position);
         }
     }
 }

@@ -31,6 +31,7 @@ public class GameEngine {
         //create the grid and store it
         int[][] GenerateGrid = Generator.generate(BOMB_NUMBER,WIDTH,HEIGHT);
         PrintGrid.print(GenerateGrid,WIDTH,HEIGHT);
+        setGrid(context, GenerateGrid);
     }
     private void setGrid(final Context context, final int[][] Gird){
         for (int x = 0; x < HEIGHT; x++){

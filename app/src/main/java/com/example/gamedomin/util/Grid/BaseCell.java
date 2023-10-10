@@ -7,16 +7,13 @@ import com.example.gamedomin.GameEngine;
 
 public abstract class BaseCell extends View {
     private int value;
-
-
-
     private boolean isBomb;
     private boolean isRevealed;
     private boolean isClicked;
     private boolean isFlagged;
 
     private int x, y;
-    private int i;
+    private int position;
 
     public BaseCell(Context context){
         super(context);
@@ -79,14 +76,14 @@ public abstract class BaseCell extends View {
     }
 
 
-    public int getI() {
-        return i;
+    public int getPosition() {
+        return position;
     }
 
-    public void setI(int i) {
-        this.i = i;
-        x = i % GameEngine.WIDTH;
-        y = i / GameEngine.HEIGHT;
+    public void setPosition(int position) {
+        this.position = position;
+        x = position % GameEngine.WIDTH;
+        y = position / GameEngine.HEIGHT;
         invalidate();
     }
 }
