@@ -4,6 +4,7 @@ import android.view.View;
 
 import com.example.gamedomin.util.Generator;
 import com.example.gamedomin.util.Grid.Cell;
+import com.example.gamedomin.util.Grid.Grid;
 import com.example.gamedomin.util.PrintGrid;
 
 public class GameEngine {
@@ -15,6 +16,8 @@ public class GameEngine {
     private  Context context;
 
     private Cell[][] MinesweeperGrid = new Cell[WIDTH][HEIGHT];
+    private int[][] grid;
+
     public static GameEngine getInstance(){
         if(instance == null){
             instance = new GameEngine();
@@ -35,10 +38,14 @@ public class GameEngine {
                 if (MinesweeperGrid[x][y] == null){
                     MinesweeperGrid[x][y] = new Cell( context, y * HEIGHT + x);
                 }
+                MinesweeperGrid[x][y].setValue(grid[x][y]);
+                MinesweeperGrid[x][y].invalidate();
             }
         }
     }
-    public View getCellAt(int i) {
-        return null;
+    public View getCellAt(int position) {
+        int x = position % WIDTH;
+        int y = position / HEIGHT;
+        return MinesweeperGrid[x][y];
     }
 }

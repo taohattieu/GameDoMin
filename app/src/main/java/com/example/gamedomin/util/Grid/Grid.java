@@ -17,7 +17,15 @@ public class Grid extends GridView {
 
     public Grid(Context context, AttributeSet attrs) {
         super(context, attrs);
+
+        setNumColumns(GameEngine.WIDTH);
         setAdapter(new GridAdapter());
+
+    }
+
+    @Override
+    protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
+        super.onMeasure(widthMeasureSpec, widthMeasureSpec);
     }
 
     private class GridAdapter extends BaseAdapter {
