@@ -1,4 +1,4 @@
-package com.example.gamedomin.util.Grid;
+package com.example.gamedomin.views.grid;
 
 import android.content.Context;
 import android.util.AttributeSet;
@@ -10,14 +10,10 @@ import android.widget.GridView;
 import com.example.gamedomin.GameEngine;
 
 public class Grid extends GridView {
-    public Grid(Context context) {
-        super(context);
-        setAdapter(new GridAdapter());
-    }
 
     public Grid(Context context, AttributeSet attrs) {
         super(context, attrs);
-        GameEngine.getInstance();
+        GameEngine.getInstance().createGrid(context);
         setNumColumns(GameEngine.WIDTH);
         setAdapter(new GridAdapter());
 
@@ -36,12 +32,12 @@ public class Grid extends GridView {
         }
 
         @Override
-        public Object getItem(int position) {
+        public Object getItem(int i) {
             return null;
         }
 
         @Override
-        public long getItemId(int position) {
+        public long getItemId(int i) {
             return 0;
         }
 
