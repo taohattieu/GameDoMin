@@ -1,4 +1,4 @@
-package com.example.gamedomin.util.Grid;
+package com.example.gamedomin.views.grid;
 
 import android.content.Context;
 import android.view.View;

@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="16dp"
-    android:id="@+id/activity_main">
+    android:padding="16dp">
 
     <LinearLayout
         android:id="@+id/linearLayout"
@@ -49,18 +48,13 @@
         </TextView>
 
     </LinearLayout>
-    <FrameLayout
+    <com.example.gamedomin.views.grid.Grid
+        android:id="@+id/minesweeperGridView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_below="@id/linearLayout"
-        android:layout_above="@id/linearLayout2">
-        <GridView
-            android:id="@+id/gdvBoom"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true">
 
-        </GridView>
-    </FrameLayout>
+    </com.example.gamedomin.views.grid.Grid>
     <LinearLayout
         android:id="@+id/linearLayout2"
         android:layout_alignParentBottom="true"
@@ -117,4 +111,4 @@
     </LinearLayout>
 
 
-</RelativeLayout>
+</LinearLayout>
