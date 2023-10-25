@@ -5,19 +5,32 @@ import android.content.Context;
 import android.graphics.Canvas;
 import android.graphics.drawable.Drawable;
 import android.util.Log;
+import android.view.View;
 
 import androidx.core.content.ContextCompat;
 
+import com.example.gamedomin.GameEngine;
 import com.example.gamedomin.R;
 
 @SuppressLint("ViewConstructor")
-public class Cell extends BaseCell{
+public class Cell extends BaseCell implements View.OnClickListener{
     private int position;
 
     public Cell(Context context, int position) {
 
         super(context);
         setPosition(position);
+    }
+    public void setPosition(int position) {
+        this.position = position;
+    }
+
+    public int getPosition() {
+        return position;
+    }
+    @Override
+    public void onClick(View v) {
+        GameEngine.getInstance().click( getXPos(), getYPos());
     }
     @Override
     protected void onMeasure(int withMeasureSpec, int heightMeasurePec){
@@ -36,12 +49,12 @@ public class Cell extends BaseCell{
         drawable.setBounds(0,0,getWidth(), getHeight());
         drawable.draw(canvas);
     }
+    private void DrawNumber (Canvas canvas){
+        Drawable drawable =  null;
 
-    public void setPosition(int position) {
-        this.position = position;
-    }
+        switch (getValue()){
+            case 0:
+        }
 
-    public int getPosition() {
-        return position;
     }
 }

@@ -47,4 +47,27 @@ public class GameEngine {
         int y = position / HEIGHT;
         return MinesweeperGrid[x][y];
     }
+    public Cell getCellAt( int x, int y ){
+        return MinesweeperGrid[x][y];
+    }
+    public void click (int x, int y){
+        if( x >= 0 && y >= 0 && x < WIDTH && y < HEIGHT && !getCellAt(x,y).isClicked()){
+            getCellAt(x,y).setClicked();
+            if(getCellAt(x,y).getValue() == 0){
+                for(int i = -1; i <= 1; i++ ){
+                    for (int j = -1; j <= 1; j++ ){
+                        if (i != j){
+                            click(x + i, y + j);
+                        }
+                    }
+                }
+            }
+            if (getCellAt(x,y).isBomb()){
+                onGameLost();
+            }
+        }
+    }
+    private void onGameLost(){
+        //handle lost game
+    }
 }
