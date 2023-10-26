@@ -94,31 +94,31 @@ public class Cell extends BaseCell implements View.OnClickListener, View.OnLongC
         //Cần sửa ảnh
         switch (getValue()){
             case 0:
-                drawable = ContextCompat.getDrawable(getContext(), R.drawable.ic_android_black_24dp);
+                drawable = ContextCompat.getDrawable(getContext(), R.drawable.number_0);
                 break;
             case 1:
-                drawable = ContextCompat.getDrawable(getContext(), R.drawable.ic_android_black_24dp);
+                drawable = ContextCompat.getDrawable(getContext(), R.drawable.number_1);
                 break;
             case 2:
-                drawable = ContextCompat.getDrawable(getContext(), R.drawable.ic_android_black_24dp);
+                drawable = ContextCompat.getDrawable(getContext(), R.drawable.number_2);
                 break;
             case 3:
-                drawable = ContextCompat.getDrawable(getContext(), R.drawable.ic_android_black_24dp);
+                drawable = ContextCompat.getDrawable(getContext(), R.drawable.number_3);
                 break;
             case 4:
-                drawable = ContextCompat.getDrawable(getContext(), R.drawable.ic_android_black_24dp);
+                drawable = ContextCompat.getDrawable(getContext(), R.drawable.number_4);
                 break;
             case 5:
-                drawable = ContextCompat.getDrawable(getContext(), R.drawable.ic_android_black_24dp);
+                drawable = ContextCompat.getDrawable(getContext(), R.drawable.number_5);
                 break;
             case 6:
-                drawable = ContextCompat.getDrawable(getContext(), R.drawable.ic_android_black_24dp);
+                drawable = ContextCompat.getDrawable(getContext(), R.drawable.number_6);
                 break;
             case 7:
-                drawable = ContextCompat.getDrawable(getContext(), R.drawable.ic_android_black_24dp);
+                drawable = ContextCompat.getDrawable(getContext(), R.drawable.number_7);
                 break;
             case 8:
-                drawable = ContextCompat.getDrawable(getContext(), R.drawable.ic_android_black_24dp);
+                drawable = ContextCompat.getDrawable(getContext(), R.drawable.number_8);
                 break;
         }
 
