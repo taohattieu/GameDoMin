@@ -16,10 +16,10 @@ import com.example.gamedomin.R;
 public class Cell extends BaseCell implements View.OnClickListener, View.OnLongClickListener{
     private int position;
 
-    public Cell(Context context, int position) {
+    public Cell(Context context, int x, int y) {
 
         super(context);
-        setPosition(position);
+        setPosition(x,y);
         setOnClickListener(this);
         setOnLongClickListener(this);
     }
@@ -69,13 +69,13 @@ public class Cell extends BaseCell implements View.OnClickListener, View.OnLongC
 
     private void drawBombExploded(Canvas canvas){
         //Cần sửa ảnh
-        Drawable drawable = ContextCompat.getDrawable(getContext(), R.drawable.bomb_normal);
+        Drawable drawable = ContextCompat.getDrawable(getContext(), R.drawable.bomb_exploded);
         drawable.setBounds(0,0,getWidth(), getHeight());
         drawable.draw(canvas);
     }
     private void drawFlag(Canvas canvas){
         //Cần sửa ảnh
-        Drawable drawable = ContextCompat.getDrawable(getContext(), R.drawable.ic_android_black_24dp);
+        Drawable drawable = ContextCompat.getDrawable(getContext(), R.drawable.flag);
         drawable.setBounds(0,0,getWidth(), getHeight());
         drawable.draw(canvas);
     }
