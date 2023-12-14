@@ -43,8 +43,10 @@ public abstract class BaseCell extends View {
         return isRevealed;
     }
 
-    public void setRevealed(boolean revealed) {
-        isRevealed = revealed;
+    public void setRevealed() {
+
+        isRevealed = true;
+        invalidate();
     }
 
     public boolean isClicked() {
@@ -80,10 +82,11 @@ public abstract class BaseCell extends View {
         return position;
     }
 
-    public void setPosition(int position) {
-        this.position = position;
-        x = position % GameEngine.WIDTH;
-        y = position / GameEngine.HEIGHT;
+    public void setPosition(int x, int y){
+        this.x = x;
+        this.y = y;
+
+        this.position = y * GameEngine.WIDTH + x;
         invalidate();
     }
 }
