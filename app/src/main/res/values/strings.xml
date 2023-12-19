@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">GameDoMin</string>
+    <string name="instructions_title">Hướng dẫn</string>
+    <string name="instructions_description">- Chạm vào một ô để hiển thị nó.\n- Nếu ô chứa mìn, bạn sẽ thua.\n- Nếu ô trống, một số sẽ xuất hiện, cho biết số ô lân cận chứa mìn.\n- Nhấn và giữ trên một ô để đánh dấu là ô chứa mìn.\n- Hoàn thành bảng mà không tiết lộ bất kỳ ô nào chứa mìn để chiến thắng.</string>
+    <string name="how_to_play_title">Cách chơi</string>
+    <string name="how_to_play_description">Trong Minesweeper, mục tiêu của bạn là làm sạch một bảng chữ nhật chứa những mìn ẩn mà không làm nổ bất kỳ ô nào. Sử dụng các số hiển thị trên các ô để xác định vị trí của các mìn. Nhấn và giữ trên một ô để đánh dấu là ô chứa mìn. Chúc may mắn!</string>
 </resources>
