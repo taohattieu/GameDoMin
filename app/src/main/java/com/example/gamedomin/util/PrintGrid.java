@@ -1,6 +1,7 @@
 package com.example.gamedomin.util;
 
 public class PrintGrid {
+
     public static void print( final int[][] grid, final int width, final int height){
         for(int x=0;x<width;x++){
             String printedText = "| ";

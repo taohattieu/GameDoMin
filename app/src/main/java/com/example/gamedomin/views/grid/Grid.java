@@ -10,13 +10,14 @@ import android.widget.GridView;
 import com.example.gamedomin.GameEngine;
 
 public class Grid extends GridView {
+    public Grid(Context context, AttributeSet attrs){
 
-    public Grid(Context context, AttributeSet attrs) {
-        super(context, attrs);
+        super(context,attrs);
+
         GameEngine.getInstance().createGrid(context);
+
         setNumColumns(GameEngine.WIDTH);
         setAdapter(new GridAdapter());
-
     }
 
     @Override
@@ -24,7 +25,7 @@ public class Grid extends GridView {
         super.onMeasure(widthMeasureSpec, heightMeasureSpec);
     }
 
-    private class GridAdapter extends BaseAdapter {
+    private class GridAdapter extends BaseAdapter{
 
         @Override
         public int getCount() {
@@ -42,7 +43,7 @@ public class Grid extends GridView {
         }
 
         @Override
-        public View getView(int position, View view, ViewGroup viewGroup) {
+        public View getView(int position, View convertView, ViewGroup viewGroup) {
             return GameEngine.getInstance().getCellAt(position);
         }
     }
