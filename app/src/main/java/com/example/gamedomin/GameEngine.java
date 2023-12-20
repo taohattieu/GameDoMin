@@ -112,6 +112,17 @@ public class GameEngine {
             }
         }
     }
+    public void resetGame(){
+        int[][] newGrid = Generator.generate(BOMB_NUMBER, WIDTH, HEIGHT);
+        setGrid(context, newGrid);
+
+        // Đặt lại trạng thái của từng ô
+        for (int x = 0; x < WIDTH; x++) {
+            for (int y = 0; y < HEIGHT; y++) {
+                MinesweeperGrid[x][y].resetCell(); // Tạo phương thức resetCell() trong lớp Cell
+            }
+        }
+    }
 }
 
 

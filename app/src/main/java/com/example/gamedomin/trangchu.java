@@ -17,6 +17,7 @@ public class trangchu extends Activity {
 
         Button btnChoiNgay = findViewById(R.id.btn1);
         Button btnHuongDan = findViewById(R.id.btn2);
+        Button btnThoat = findViewById(R.id.btn3);
 
         // Gắn sự kiện lắng nghe cho Nút Chơi Ngay
         btnChoiNgay.setOnClickListener(new View.OnClickListener() {
@@ -37,6 +38,13 @@ public class trangchu extends Activity {
                 Intent intent = new Intent(trangchu.this, huongdan.class);
                 // Bắt đầu Activity mới
                 startActivity(intent);
+            }
+        });
+
+        btnThoat.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finishAffinity();
             }
         });
     }

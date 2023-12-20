@@ -10,13 +10,16 @@ import androidx.core.content.ContextCompat;
 import com.example.gamedomin.GameEngine;
 import com.example.gamedomin.R;
 
-public class Cell extends BaseCell implements View.OnClickListener, View.OnLongClickListener{
-    public Cell(Context context,int x,int y){
-
+public class Cell extends BaseCell implements View.OnClickListener, View.OnLongClickListener {
+    public Cell(Context context, int x, int y) {
         super(context);
-        setPosition(x,y);
+        setPosition(x, y);
         setOnClickListener(this);
         setOnLongClickListener(this);
+    }
+
+    public void resetCell() {
+
     }
 
     @Override

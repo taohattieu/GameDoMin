@@ -16,10 +16,11 @@ public class MainActivity extends Activity {
         GameEngine.getInstance().createGrid(this);
 
         // Tìm Button trong layout bằng ID
-        Button button = findViewById(R.id.btnback);
+        Button buttonQuaylai = findViewById(R.id.btnback);
+        Button buttonChoimoi = findViewById(R.id.btnNewGame);
 
         // Gắn sự kiện lắng nghe cho Button
-        button.setOnClickListener(new View.OnClickListener() {
+        buttonQuaylai.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 // Tạo Intent để chuyển đến SecondActivity
@@ -27,6 +28,13 @@ public class MainActivity extends Activity {
 
                 // Bắt đầu SecondActivity
                 startActivity(intent);
+            }
+        });
+
+        buttonChoimoi.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                GameEngine.getInstance().resetGame();
             }
         });
     }
