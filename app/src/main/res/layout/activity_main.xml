@@ -38,31 +38,31 @@
 
         <Button
 
-            android:id="@+id/btnPause"
+            android:id="@+id/btnNewGame"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:backgroundTint="#000000"
-            android:text="pause"
+            android:text="Chơi mới"
             android:textColor="#ffffff">
 
         </Button>
 
-        <View
-            android:layout_width="3dp"
-            android:layout_height="match_parent"
-            android:textColor="#ffffff"
-            android:layout_marginTop="5dp"
-            android:layout_marginBottom="5dp"/>
-        <Button
-            android:id="@+id/btnPlay"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Play"
-            android:layout_weight="1"
-            android:textColor="#ffffff"
-            android:backgroundTint="#000000">
+<!--        <View-->
+<!--            android:layout_width="3dp"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:textColor="#ffffff"-->
+<!--            android:layout_marginTop="5dp"-->
+<!--            android:layout_marginBottom="5dp"/>-->
+<!--        <Button-->
+<!--            android:id="@+id/btnPlay"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Play"-->
+<!--            android:layout_weight="1"-->
+<!--            android:textColor="#ffffff"-->
+<!--            android:backgroundTint="#000000">-->
 
-        </Button>
+<!--        </Button>-->
     </LinearLayout>
 </RelativeLayout>

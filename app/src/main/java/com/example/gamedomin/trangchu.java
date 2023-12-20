@@ -6,6 +6,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.example.gamedomin.huongdan;
+
 public class trangchu extends Activity {
 
     @Override
@@ -13,14 +15,26 @@ public class trangchu extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.trangchu);
 
-        Button button = findViewById(R.id.btn1);
-        // Gắn sự kiện lắng nghe cho Button
-        button.setOnClickListener(new View.OnClickListener() {
+        Button btnChoiNgay = findViewById(R.id.btn1);
+        Button btnHuongDan = findViewById(R.id.btn2);
+
+        // Gắn sự kiện lắng nghe cho Nút Chơi Ngay
+        btnChoiNgay.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                // Tạo Intent để chuyển đến trang layout activity_main.xml
+                // Tạo Intent để chuyển đến trang chơi
                 Intent intent = new Intent(trangchu.this, MainActivity.class);
+                // Bắt đầu Activity mới
+                startActivity(intent);
+            }
+        });
 
+        // Gắn sự kiện lắng nghe cho Nút Hướng Dẫn
+        btnHuongDan.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                // Tạo Intent để chuyển đến trang hướng dẫn
+                Intent intent = new Intent(trangchu.this, huongdan.class);
                 // Bắt đầu Activity mới
                 startActivity(intent);
             }
