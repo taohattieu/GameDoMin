@@ -25,16 +25,12 @@
             android:layout_height="wrap_content"
             android:text="Quay lại"
             android:layout_weight="1"
+            android:layout_marginRight="5dp"
             android:textColor="#ffffff"
-            android:backgroundTint="#000000">
+            android:background="@drawable/rounded_button">
 
         </Button>
-        <View
-            android:layout_width="3dp"
-            android:layout_height="match_parent"
-            android:textColor="#ffffff"
-            android:layout_marginTop="5dp"
-            android:layout_marginBottom="5dp"/>
+
 
         <Button
 
@@ -42,7 +38,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:backgroundTint="#000000"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/rounded_button"
             android:text="Chơi mới"
             android:textColor="#ffffff">
 

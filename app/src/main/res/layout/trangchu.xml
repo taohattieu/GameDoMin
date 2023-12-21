@@ -24,7 +24,7 @@
         android:id="@+id/btn1"
         android:layout_width="300dp"
         android:layout_height="60dp"
-        android:backgroundTint="@color/white"
+        android:background="@drawable/rounded_button"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -33,13 +33,13 @@
         app:layout_constraintVertical_bias="0.271"
         android:text="Chơi ngay"
         android:textSize="30dp"
-        android:textColor="@color/black"/>
+        android:textColor="@android:color/background_light"/>
 
     <Button
         android:id="@+id/btn2"
         android:layout_width="300dp"
         android:layout_height="60dp"
-        android:backgroundTint="@color/white"
+        android:background="@drawable/rounded_button"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -48,13 +48,13 @@
         app:layout_constraintVertical_bias="0.239"
         android:text="Hướng dẫn"
         android:textSize="30dp"
-        android:textColor="@color/black"/>
+        android:textColor="@android:color/background_light"/>
 
     <Button
         android:id="@+id/btn3"
         android:layout_width="300dp"
         android:layout_height="60dp"
-        android:backgroundTint="@color/white"
+        android:background="@drawable/rounded_button"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -63,5 +63,5 @@
         app:layout_constraintVertical_bias="0.401"
         android:text="Thoát"
         android:textSize="30dp"
-        android:textColor="@color/black"/>
+        android:textColor="@android:color/background_light"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
